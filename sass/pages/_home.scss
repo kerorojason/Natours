@@ -33,11 +33,7 @@
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 }
 
 .book {
@@ -52,7 +48,7 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
 
-  height: 40rem;
+  height: 53rem;
 
   &__form {
     width: 50%;

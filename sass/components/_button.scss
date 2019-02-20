@@ -1,6 +1,7 @@
 .btn {
   /* 點擊前後不變 */
-  &:link,
+  &, //for button element
+  &:link, //for anchor element
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -12,6 +13,10 @@
 
     /* 讓pseudo element hidden */
     position: relative;
+
+    // change the button element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -22,8 +27,9 @@
       opacity: 0;
     }
   }
-
+  &:focus,
   &:active {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
